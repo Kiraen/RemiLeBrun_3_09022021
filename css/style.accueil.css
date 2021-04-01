@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text);
+  font-size: 1.6rem; }
+
+ul {
+  list-style: none; }
+
+a {
+  color: var(--text);
+  text-decoration: none; }
+
+:root {
+  --font-secondary: "Shrinkhand", Arial;
+  --font-primary: "Roboto", Arial;
+  --primary: "#9356DC";
+  --secondary: "#FF79DA";
+  --tertiary: "#99E2DO"; }
+
+.section-reservation-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: rgba(128, 128, 128, 0.178); }
+  .section-reservation-city p {
+    margin-left: 1.5rem; }
+
+.section-reservation-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  background-color: rgba(128, 128, 128, 0.062);
+  padding: 0 3rem; }
+  .section-reservation-main h1,
+  .section-reservation-main p {
+    text-align: center; }
+  .section-reservation-main .myButton {
+    background: linear-gradient(162deg, #ff79d9 0%, #9256dc 100%);
+    border-radius: 28px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 12px 0px;
+    text-decoration: none; }

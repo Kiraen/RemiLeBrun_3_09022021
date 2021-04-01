@@ -1,26 +1,19 @@
-// BASE
-
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-family: var(--font-primary);
   color: var(--text);
-  font-size: 1.6rem;
-}
+  font-size: 1.6rem; }
 
 ul {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
   color: var(--text);
-  text-decoration: none;
-}
+  text-decoration: none; }

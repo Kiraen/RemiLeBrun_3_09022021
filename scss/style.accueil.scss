@@ -1,3 +1,41 @@
 @import "base";
-@import "nav";
 @import "classes";
+
+.section-reservation-city {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  background-color: rgba(128, 128, 128, 0.178);
+  p {
+    margin-left: 1.5rem;
+  }
+}
+
+.section-reservation-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20rem;
+  background-color: rgba(128, 128, 128, 0.062);
+  padding: 0 3rem;
+  h1,
+  p {
+    text-align: center;
+  }
+  .myButton {
+    background: linear-gradient(
+      162deg,
+      rgba(255, 121, 217, 1) 0%,
+      rgba(146, 86, 220, 1) 100%
+    );
+    border-radius: 28px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 12px 0px;
+    text-decoration: none;
+  }
+}
