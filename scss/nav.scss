@@ -3,13 +3,31 @@
 .nav {
   display: flex;
   justify-content: center;
-  height: 5rem;
+  height: 6rem;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.26);
   .nav-logo {
-    display: flex;
-    align-items: center;
-    font-family: var(--font-secondary);
+    margin: auto;
+    margin-top: 2.2rem;
+  }
+  .nav-logo-image {
+    width: 16rem;
   }
 }
 
 // FOOTER
+
+.footer {
+  padding: 2rem;
+  background: #333;
+  img {
+    filter: invert(100%);
+    width: 10rem;
+    padding: 1rem 0;
+  }
+  ul {
+    color: white;
+    li {
+      padding: 0.5rem 0;
+    }
+  }
+}

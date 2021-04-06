@@ -10,3 +10,19 @@
 }
 
 // CLASSES
+.myButton {
+  background: linear-gradient(
+    162deg,
+    rgba(255, 121, 217, 1) 0%,
+    rgba(146, 86, 220, 1) 100%
+  );
+  border-radius: 28px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 14px 0;
+  width: 22rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
