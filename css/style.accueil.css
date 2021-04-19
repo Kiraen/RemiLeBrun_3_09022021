@@ -68,8 +68,6 @@ a {
     border-radius: 1.5rem;
     box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.1);
     position: relative; }
-    .functionality .functionnality-cards :hover {
-      background: rgba(146, 86, 220, 0.2); }
     .functionality .functionnality-cards .functionnality-cards-number {
       display: inline-block;
       background-color: #9256dc;
@@ -118,6 +116,7 @@ a {
       position: relative;
       border-radius: 0 0 2.5rem 2.5rem; }
       .restoration .restoration-card .restoration-card-content .restoration-card-icone {
+        font-size: 2.8rem;
         position: absolute;
         top: 1.5rem;
         right: 2rem; }

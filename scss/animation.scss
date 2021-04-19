@@ -1,0 +1,41 @@
+.card-icone-animation {
+  color: rgba(255, 121, 217, 1);
+  font-size: 3rem;
+  top: 1.28rem;
+  right: 1.89rem;
+  opacity: 0;
+  &:hover {
+    opacity: 100;
+    transition: all 0.5s ease;
+  }
+}
+.card-catalog {
+  opacity: 100%;
+  animation: spawn 1s 1;
+  @keyframes spawn {
+    0% {
+      opacity: 0%;
+      transform: translateY(1.5rem);
+    }
+    100% {
+      opacity: 100%;
+      transform: translateY(0rem);
+    }
+  }
+}
+
+.card-validation {
+  height: 8rem;
+  width: 2rem;
+  transition: transform 0.5s ease-in-out;
+  background: green;
+  opacity: 0;
+  border-radius: 0 1.5rem 1.5rem 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  &:hover {
+    opacity: 1;
+    transform: scaleX(50);
+  }
+}
