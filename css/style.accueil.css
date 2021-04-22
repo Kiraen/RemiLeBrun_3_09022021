@@ -36,6 +36,8 @@ a {
   width: 22rem;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
   margin: auto; }
+  .myButton:hover {
+    opacity: 0.9; }
 
 .section-reservation-city {
   display: flex;
@@ -120,3 +122,5 @@ a {
         position: absolute;
         top: 1.5rem;
         right: 2rem; }
+      .restoration .restoration-card .restoration-card-content-heart-btn:focus {
+        color: red; }

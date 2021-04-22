@@ -9,27 +9,18 @@
     transition: all 0.5s ease; }
 
 .card-catalog {
-  opacity: 100%;
-  animation: spawn 1s 1; }
+  animation: fadein 2s; }
 
-@keyframes spawn {
-  0% {
-    opacity: 0%;
+@keyframes fadein {
+  from {
+    opacity: 0;
     transform: translateY(1.5rem); }
-  100% {
-    opacity: 100%;
-    transform: translateY(0rem); } }
-
-.card-validation {
-  height: 8rem;
-  width: 2rem;
-  transition: transform 0.5s ease-in-out;
-  background: green;
-  opacity: 0;
-  border-radius: 0 1.5rem 1.5rem 0;
-  position: absolute;
-  right: 0;
-  top: 0; }
-  .card-validation:hover {
+  to {
     opacity: 1;
-    transform: scaleX(50); }
+    transform: translateY(0rem); } }
+  .card-catalog .anim-1 {
+    animation-delay: 1s; }
+  .card-catalog .anim-2 {
+    animation-delay: 2s; }
+  .card-catalog .anim-3 {
+    animation-delay: 3s; }
