@@ -1,15 +1,17 @@
 .card-icone-animation {
   color: #ff79d9;
   font-size: 3rem;
-  top: 1.28rem;
-  right: 1.89rem;
+  position: absolute;
+  top: 1.4rem;
+  right: 1.9rem;
   opacity: 0; }
   .card-icone-animation:hover {
     opacity: 100;
     transition: all 0.5s ease; }
 
 .card-catalog {
-  animation: fadein 2s; }
+  opacity: 0;
+  animation: fadein 2s forwards; }
 
 @keyframes fadein {
   from {
@@ -18,9 +20,3 @@
   to {
     opacity: 1;
     transform: translateY(0rem); } }
-  .card-catalog .anim-1 {
-    animation-delay: 1s; }
-  .card-catalog .anim-2 {
-    animation-delay: 2s; }
-  .card-catalog .anim-3 {
-    animation-delay: 3s; }

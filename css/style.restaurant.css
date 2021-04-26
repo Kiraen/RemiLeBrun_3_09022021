@@ -56,6 +56,23 @@ section {
     section .restaurant-catalog .restaurant-title {
       display: flex;
       justify-content: space-between; }
+      section .restaurant-catalog .restaurant-title h1 {
+        margin-bottom: 4rem; }
+      section .restaurant-catalog .restaurant-title .restoration-card-icone {
+        font-size: 2.7rem;
+        position: absolute;
+        top: 4rem;
+        right: 3.1rem; }
+      section .restaurant-catalog .restaurant-title .card-icone-animation {
+        font-size: 3rem;
+        top: 3.85rem;
+        right: 2.9rem; }
+    section .restaurant-catalog .child-1 {
+      animation-delay: 0.3s; }
+    section .restaurant-catalog .child-2 {
+      animation-delay: 0.6s; }
+    section .restaurant-catalog .child-3 {
+      animation-delay: 0.9s; }
     section .restaurant-catalog .card-catalog {
       margin: 2rem 0;
       padding: 2rem;
@@ -67,7 +84,10 @@ section {
       text-align: left; }
       section .restaurant-catalog .card-catalog .desc-price {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
         section .restaurant-catalog .card-catalog .desc-price .card-catalog-price {
           margin-right: 0rem; }
       section .restaurant-catalog .card-catalog:focus .card-validation {
@@ -88,7 +108,6 @@ section {
         position: absolute;
         left: 25%;
         top: 25%;
-        animation-delay: 0.3;
         animation: rotate 0.6s; }
 
 @keyframes rotate {
@@ -106,9 +125,10 @@ section {
         font-size: 2rem;
         border-radius: 2rem;
         padding: 0.5rem; }
-  section .button-restaurant {
-    display: flex;
-    justify-content: center; }
+
+.button-restaurant {
+  display: flex;
+  justify-content: center; }
 
 .footer-restaurant {
   margin-top: 510px; }
