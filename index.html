@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="./css/style.accueil.css">
   <link rel="stylesheet" href="./css/nav.css">
   <link rel="stylesheet" href="./css/loader.css">
-  <link rel="stylesheet" href="./css/animation.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
@@ -20,14 +19,14 @@
 </head>
 
 <body>
-  <!-- <div class="loader">
+  <div class="loader">
     <p>Préparation des condiments</p>
     <div class="lds-facebook">
       <div></div>
       <div></div>
       <div></div>
     </div>
-  </div> -->
+  </div>
 
   <header class="nav">
     <a href="#" class="nav-logo"><img src="./img/logo/ohmyfood.png" alt="logo ohmyfood" class="nav-logo-image"></a>
@@ -36,7 +35,11 @@
   <section class="section-reservation">
     <div class="section-reservation-city">
       <i class="fas fa-map-marker-alt"></i>
-      <p>Paris, Belleville</p>
+      <select name="pets" id="pets-paris">
+        <option value="paris">Paris, Belleville</option>
+        <option value="new-york">New-York</option>
+        <option value="londre">Londre</option>
+      </select>
     </div>
 
     <div class="section-reservation-main">
@@ -136,8 +139,8 @@
   <footer class="footer">
     <img src="./img/logo/ohmyfood.png" alt="">
     <ul>
-      <li>Proposer un restaurant</li>
-      <li>Devenir partenaire</li>
+      <li><i class="fas fa-utensils footer-fonta-1"></i>Proposer un restaurant</li>
+      <li><i class="fas fa-hands-helping footer-fonta-2"></i>Devenir partenaire</li>
       <li>Mentions légales</li>
       <li><a href="mailto:remilebrun.pro@gmail.com">Contact</a></li>
     </ul>

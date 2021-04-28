@@ -1,6 +1,7 @@
 // NAVIGATION
 
 .nav {
+  background: white;
   display: flex;
   justify-content: center;
   height: 6rem;
@@ -39,6 +40,14 @@
       padding: 0.5rem 0;
       &:hover {
         color: #ff79d9;
+      }
+      .footer-fonta-1 {
+        font-size: 1.2rem;
+        margin-right: 1.1rem;
+      }
+      .footer-fonta-2 {
+        font-size: 1rem;
+        margin-right: 0.8rem;
       }
     }
   }

@@ -1,5 +1,6 @@
 @import "base";
 @import "classes";
+@import "media-queries";
 
 .section-reservation-city {
   display: flex;
@@ -11,10 +12,21 @@
     margin-bottom: 0.5rem;
     color: rgb(75, 75, 75);
   }
-  p {
+  select {
+    //restart
+    appearance: none;
+    border-style: none;
+    background: rgba(128, 128, 128, 0);
+    font-size: 1.6rem;
+    //
+    cursor: pointer;
     margin-left: 1.5rem;
     font-weight: 600;
     color: rgb(75, 75, 75);
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      color: #9356dc;
+    }
   }
 }
 
@@ -88,13 +100,13 @@
 
 .restoration {
   background-color: rgba(128, 128, 128, 0.062);
-  padding: 0 2rem;
+  padding: 1rem 2rem 3rem 2rem;
   h2 {
     padding: 4rem 0rem 0rem 0;
   }
   .restoration-card {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
-    border-radius: 2.5rem;
+    border-radius: 1.5rem;
     margin: 2rem 0;
     &:hover {
       transform: scale(1.02);
@@ -103,7 +115,7 @@
     .restoration-card-image {
       position: relative;
       img {
-        border-radius: 2.5rem 2.5rem 0 0;
+        border-radius: 1.5rem 1.5rem 0 0;
         width: 100%;
         height: 18rem;
         object-fit: cover;
@@ -114,14 +126,17 @@
         padding: 0.8rem 1.2rem;
         top: 1.5rem;
         right: 1.5rem;
-        color: green;
-        background: rgb(151, 218, 190);
+        color: rgb(36, 155, 36);
+        font-weight: 800;
+        background: #99e2d0;
         font-size: 1.4rem;
         font-weight: bold;
         border-radius: 0.2rem;
       }
     }
     .restoration-card-content {
+      background-color: white;
+      margin-top: -0.3rem;
       padding: 1rem 2rem;
       position: relative;
       border-radius: 0 0 2.5rem 2.5rem;

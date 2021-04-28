@@ -8,6 +8,11 @@
   justify-content: center;
   align-items: center;
   animation: loading 3s 1; }
+  .loader p {
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+    font-family: "Shrikhand", Arial; }
 
 @keyframes loading {
   0% {
@@ -20,9 +25,7 @@
     background: white;
     opacity: 100%; }
   100% {
-    opacity: 0%; }
-  p {
-    font-size: 2rem; } }
+    opacity: 0%; } }
   .loader .lds-facebook {
     display: inline-block;
     position: relative;
