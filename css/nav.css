@@ -1,3 +1,6 @@
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+/* Large desktop 4 K */
 .nav {
   background: white;
   display: flex;
@@ -20,6 +23,9 @@
 .footer {
   padding: 2rem;
   background: #333; }
+  @media (min-width: 1200px) {
+    .footer {
+      margin-top: auto; } }
   .footer img {
     filter: invert(100%);
     width: 10rem;
@@ -38,4 +44,4 @@
         margin-right: 0.8rem; }
 
 .footer-restaurant {
-  margin-top: 120rem; }
+  margin-top: 62rem; }

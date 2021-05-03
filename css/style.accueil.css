@@ -62,12 +62,26 @@ a {
     opacity: 1;
     transform: translateY(0rem); } }
 
+/* Portrait tablet to landscape and desktop */
+/* Large desktop */
+/* Large desktop 4 K */
+@media (min-width: 1200px) {
+  html,
+  body {
+    height: 100%; } }
+
+@media (min-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column; } }
+
 .section-reservation-city {
+  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 5rem;
-  background-color: rgba(128, 128, 128, 0.178); }
+  background: rgba(233, 233, 233, 0.411); }
   .section-reservation-city i {
     margin-bottom: 0.5rem;
     color: #4b4b4b; }
@@ -88,9 +102,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 32rem;
-  background-color: rgba(128, 128, 128, 0.13);
+  height: 30rem;
+  background-color: white;
   padding: 4rem 3rem; }
+  @media (min-width: 1200px) {
+    .section-reservation-main {
+      padding: 1rem 3rem;
+      height: 16rem; } }
   .section-reservation-main h1,
   .section-reservation-main p {
     text-align: center;
@@ -106,8 +124,22 @@ a {
     font-size: 1.8rem; }
 
 .functionality {
+  background: white;
   padding: 3rem 2rem; }
-  .functionality .functionnality-cards {
+  @media (min-width: 1200px) {
+    .functionality {
+      padding: 1rem 0 3rem 0; } }
+  @media (min-width: 1200px) {
+    .functionality h1 {
+      display: flex;
+      justify-content: center;
+      margin-right: 100rem;
+      padding-bottom: 1.5rem; } }
+  @media (min-width: 1200px) {
+    .functionality .functionality-container {
+      display: flex;
+      justify-content: center; } }
+  .functionality .functionality-container .functionnality-cards {
     display: flex;
     background-color: rgba(128, 128, 128, 0.062);
     padding: 2.2rem;
@@ -115,13 +147,17 @@ a {
     border-radius: 1.5rem;
     box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.1);
     position: relative; }
-    .functionality .functionnality-cards:hover {
+    @media (min-width: 1200px) {
+      .functionality .functionality-container .functionnality-cards {
+        margin: 0 2rem;
+        width: 36.5rem; } }
+    .functionality .functionality-container .functionnality-cards:hover {
       transition: all 0.2s ease-in-out;
       background: rgba(146, 86, 220, 0.116); }
-      .functionality .functionnality-cards:hover .cards-icone {
+      .functionality .functionality-container .functionnality-cards:hover .cards-icone {
         color: #9356dc;
         transition: all 0.2s ease-in-out; }
-    .functionality .functionnality-cards .functionnality-cards-number {
+    .functionality .functionality-container .functionnality-cards .functionnality-cards-number {
       display: inline-block;
       background-color: #9256dc;
       color: white;
@@ -134,34 +170,55 @@ a {
       position: absolute;
       left: -1rem;
       top: 1.5rem; }
-    .functionality .functionnality-cards .cards-icone {
+    .functionality .functionality-container .functionnality-cards .cards-icone {
       font-size: 2rem;
       margin: 0 2rem 0 1rem;
       color: rgba(128, 128, 128, 0.842); }
-    .functionality .functionnality-cards p {
+    .functionality .functionality-container .functionnality-cards p {
       font-weight: 600; }
 
 .restoration {
-  background-color: rgba(128, 128, 128, 0.062);
+  background: rgba(233, 233, 233, 0.411);
   padding: 1rem 2rem 3rem 2rem; }
+  @media (min-width: 1200px) {
+    .restoration {
+      padding: 1.5rem 2rem;
+      height: 60rem; } }
+  @media (min-width: 2000px) {
+    .restoration {
+      height: 80rem; } }
   .restoration h2 {
-    padding: 4rem 0rem 0rem 0; }
-  .restoration .restoration-card {
+    padding: 4rem 0 0 0; }
+    @media (min-width: 1200px) {
+      .restoration h2 {
+        display: flex;
+        justify-content: center;
+        margin-right: 105rem;
+        padding: 0rem 0 1rem 0; } }
+  @media (min-width: 1200px) {
+    .restoration .restoration-container {
+      display: flex;
+      justify-content: center; } }
+  .restoration .restoration-container .restoration-card {
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
     border-radius: 1.5rem;
     margin: 2rem 0; }
-    .restoration .restoration-card:hover {
+    @media (min-width: 1200px) {
+      .restoration .restoration-container .restoration-card {
+        width: 28rem;
+        margin: 1rem; } }
+    .restoration .restoration-container .restoration-card:hover {
       transform: scale(1.02);
       transition: all 0.2s ease-in-out; }
-    .restoration .restoration-card .restoration-card-image {
+    .restoration .restoration-container .restoration-card .restoration-card-image {
       position: relative; }
-      .restoration .restoration-card .restoration-card-image img {
+      .restoration .restoration-container .restoration-card .restoration-card-image img {
         border-radius: 1.5rem 1.5rem 0 0;
         width: 100%;
         height: 18rem;
         object-fit: cover;
         object-position: 50% 50%; }
-      .restoration .restoration-card .restoration-card-image p {
+      .restoration .restoration-container .restoration-card .restoration-card-image p {
         position: absolute;
         padding: 0.8rem 1.2rem;
         top: 1.5rem;
@@ -172,16 +229,16 @@ a {
         font-size: 1.4rem;
         font-weight: bold;
         border-radius: 0.2rem; }
-    .restoration .restoration-card .restoration-card-content {
+    .restoration .restoration-container .restoration-card .restoration-card-content {
       background-color: white;
       margin-top: -0.3rem;
       padding: 1rem 2rem;
       position: relative;
       border-radius: 0 0 2.5rem 2.5rem; }
-      .restoration .restoration-card .restoration-card-content h3 {
+      .restoration .restoration-container .restoration-card .restoration-card-content h3 {
         font-weight: 800;
         margin-bottom: 0.2rem; }
-      .restoration .restoration-card .restoration-card-content .restoration-card-icone {
+      .restoration .restoration-container .restoration-card .restoration-card-content .restoration-card-icone {
         font-size: 2.8rem;
         color: #5e5e5e;
         position: absolute;
