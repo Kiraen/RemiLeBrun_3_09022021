@@ -1,4 +1,3 @@
-@import "base";
 @import "classes";
 @import "mixin_queries";
 
@@ -34,7 +33,8 @@ section {
     padding: 4rem 2rem;
     border-radius: 5rem 5rem 0 0;
     @include desktop {
-      height: 68rem;
+      top: -12rem;
+      height: 62rem;
     }
     .restaurant-title {
       display: flex;
@@ -44,6 +44,9 @@ section {
         font-weight: 500;
         font-size: 3rem;
         margin-bottom: 4rem;
+        @include desktop {
+          margin-bottom: 2rem;
+        }
       }
       .restoration-card-icone {
         color: rgb(94, 94, 94);
@@ -62,13 +65,15 @@ section {
     .restaurant-container {
       @include desktop {
         display: flex;
+        justify-content: space-between;
       }
       .entries,
       .dishes,
       .dessert {
         margin-bottom: 4rem;
         @include desktop {
-          margin-bottom: 8rem;
+          margin-bottom: 3rem;
+          width: 42rem;
         }
         h2 {
           color: grey;
@@ -103,6 +108,7 @@ section {
         width: 63rem;
       }
       h3 {
+        font-size: 1.46rem;
         margin-bottom: 0.7rem;
       }
       .desc-price {
@@ -113,7 +119,7 @@ section {
           overflow: hidden;
           text-overflow: ellipsis;
           color: rgb(73, 73, 73);
-          font-size: 1.5rem;
+          font-size: 1.4rem;
         }
         .card-catalog-price {
           margin-right: 0rem;
@@ -127,7 +133,7 @@ section {
       }
       &:focus {
         .card-validation {
-          height: 6.3rem;
+          height: 6rem;
           width: 7rem;
           transition: transform 0.5s ease-in-out;
           transform-origin: right;

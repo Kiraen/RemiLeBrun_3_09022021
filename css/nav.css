@@ -14,6 +14,9 @@
     .nav .arrow-nav i {
       color: rgba(0, 0, 0, 0.8);
       font-size: 2.2rem; }
+      @media (min-width: 1200px) {
+        .nav .arrow-nav i {
+          margin-bottom: 5rem; } }
   .nav .nav-logo {
     margin: auto;
     margin-top: 2.2rem; }
@@ -44,4 +47,10 @@
         margin-right: 0.8rem; }
 
 .footer-restaurant {
-  margin-top: 62rem; }
+  margin-top: 118rem; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .footer-restaurant {
+      margin-top: 120rem; } }
+  @media (min-width: 1200px) {
+    .footer-restaurant {
+      margin-top: 50rem; } }
