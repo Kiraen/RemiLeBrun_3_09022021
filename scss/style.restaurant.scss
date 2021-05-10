@@ -130,6 +130,7 @@ section {
           margin-right: 0rem;
           font-weight: 700;
           font-size: 1.5rem;
+          transition: all 1s ease;
         }
       }
       &:focus {
@@ -138,14 +139,9 @@ section {
       }
       &:focus {
         .card-validation {
-          height: 100%;
           width: 7rem;
+          opacity: 100;
           transition: transform 0.1s ease-in-out;
-          transform-origin: right;
-          background: #99e2d0;
-          position: absolute;
-          right: 0;
-          top: 0;
           transition: all 1s ease;
         }
         .card-catalog-price {
@@ -175,6 +171,15 @@ section {
       .card-validation {
         width: 0rem;
         border-radius: 0 1.5rem 1.5rem 0;
+        transform-origin: right;
+        background: #99e2d0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        opacity: 0;
+        transition: transform 0.1s ease-in-out;
+        transition: all 1s ease;
       }
       .card-validation-checked {
         display: none;
@@ -183,6 +188,8 @@ section {
         font-size: 2rem;
         border-radius: 2rem;
         padding: 0.5rem;
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
