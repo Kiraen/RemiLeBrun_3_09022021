@@ -155,9 +155,6 @@ section {
       @media (min-width: 1200px) {
         section .restaurant-catalog .card-catalog {
           width: 38rem; } }
-      @media (min-width: 2000px) {
-        section .restaurant-catalog .card-catalog {
-          width: 63rem; } }
       section .restaurant-catalog .card-catalog h3 {
         font-size: 1.46rem;
         margin-bottom: 0.7rem;
