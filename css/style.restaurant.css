@@ -223,9 +223,7 @@ section {
         background: white;
         font-size: 2rem;
         border-radius: 2rem;
-        padding: 0.5rem;
-        opacity: 0;
-        transition: all 0.2s ease-in-out; }
+        padding: 0.5rem; }
 
 .button-restaurant {
   display: flex;
