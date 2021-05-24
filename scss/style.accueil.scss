@@ -55,7 +55,7 @@ body {
     padding: 1rem 3rem;
     height: 16rem;
   }
-  h1,
+  h2,
   p {
     text-align: center;
     padding: 1rem 0;
@@ -81,9 +81,13 @@ body {
   }
   h1 {
     @include desktop {
+      margin-left: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+    @include largedesktop {
       display: flex;
       justify-content: center;
-      margin-right: 100rem;
+      margin-right: 102rem;
       padding-bottom: 1.5rem;
     }
   }
@@ -151,10 +155,12 @@ body {
   h2 {
     padding: 4rem 0 0 0;
     @include desktop {
+      margin-left: 1rem;
+    }
+    @include largedesktop {
       display: flex;
       justify-content: center;
       margin-right: 105rem;
-      padding: 0rem 0 1rem 0;
     }
   }
   .restoration-container {
