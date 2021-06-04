@@ -125,7 +125,8 @@ section {
     @media (min-width: 1024px) {
       section .restaurant-catalog .restaurant-container {
         display: flex;
-        justify-content: center; } }
+        justify-content: center;
+        height: 30rem; } }
     section .restaurant-catalog .restaurant-container .entries,
     section .restaurant-catalog .restaurant-container .dishes,
     section .restaurant-catalog .restaurant-container .dessert {

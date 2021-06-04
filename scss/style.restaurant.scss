@@ -72,6 +72,7 @@ section {
       @include desktop {
         display: flex;
         justify-content: center;
+        height: 30rem;
       }
       .entries,
       .dishes,
